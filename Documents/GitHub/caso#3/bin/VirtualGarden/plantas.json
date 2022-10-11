@@ -1,0 +1,2216 @@
+{
+    "plantas" : [
+        {
+            "nombre" : "manzano",
+            "estados": [
+              {
+            	"id": 1,
+                "nombre":"Almacigo",
+                "minLife": 90,
+                "maxLife": 100,
+                "foto": "url",
+                "rules": [
+                  {
+                    "tiempo": 3,
+                    "unidad": "dias",
+                    "minWater": 0,
+                    "maxWater": 30,
+                    "minAbono": 0,
+                    "maxAbono": 50,
+                    "efecto": -5
+                  },
+                  {
+                    "tiempo": 3,
+                    "unidad": "dias",
+                    "minWater": 30,
+                    "maxWater": 100,
+                    "minAbono": 50,
+                    "maxAbono": 100,
+                    "efecto": -10
+                  }
+            		]
+              },
+                {	 
+                        "id" : 2,
+                		"nombre" : "Adulta", 
+                        "minLife" : 60,
+                        "maxLife" : 90,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 4,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 40,
+                            "minAbono" : 0,
+                            "maxAbono" : 70,
+                            "efecto" : -10
+                        },{
+                            "tiempo" : 4,
+                            "unidad" : "dias",
+                            "minWater" : 40,
+                            "maxWater" : 100,
+                            "minAbono" : 70,
+                            "maxAbono" : 100,
+                            "efecto" : -20
+                        }
+                        ]
+                    
+                },
+                {		
+                		"id" : 3,
+                    	"nombre" : "con fruto",
+                        "minLife" : 60,
+                        "maxWater" : 80,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 2,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 70,
+                            "minAbono" : 0,
+                            "maxAbono" : 40,
+                            "efecto" : -5
+                        },
+                        {
+                            "tiempo" : 2,
+                            "unidad" : "dias",
+                            "minWater" : 70,
+                            "maxWater" : 100,
+                            "minAbono" : 40,
+                            "maxAbono" : 100,
+                            "efecto" : -20
+                        } 
+                        ] 
+                       
+                       
+                },
+                {		
+                		"id" : 4,
+                    	"nombre":"humeda",
+                        "minLife" : 0,
+                        "maxLife" : 100,
+                        "minWater" : 80,
+                        "maxWater" : 100,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 10,
+                            "minAbono" : 0,
+                            "maxAbono" : 20,
+                            "efecto" : 10
+                        },
+                        {
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 10,
+                            "maxWater" : 100,
+                            "minAbono" : 20,
+                            "maxAbono" : 100,
+                            "efecto" : -10
+                        }
+                        ]
+             
+                },
+                {
+                		"id" : 5,
+                    	"nombre" : "seca",
+                        "minLife" : 0,
+                        "maxLife" : 100,   
+                        "foto" : "url",  
+                        "rules" : [{
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 70,
+                            "minAbono" : 0,
+                            "maxAbono" : 40,
+                            "efecto" : 20
+                        },
+                        {
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 70,
+                            "maxWater" : 100,
+                            "minAbono" : 40,
+                            "maxAbono" : 100,
+                            "efecto" : -5
+                        }
+                        ]                                           
+                },
+                {
+                		"id" : 0,
+                    	"nombre" : "muerta",
+                        "minLife" : 0,
+                        "maxLife" : 10,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 100,
+                            "minAbono" : 0,
+                            "maxAbono" : 100,
+                            "efecto" : 0
+                        }]
+                }
+            ],
+            "seasons": [
+                {
+                    "name" : "Verano",
+                    "efecto" : 5,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                },
+                {
+                    "startDate" : "1/01/2022",
+                    "endDate" : "20/03/2022",
+                    "name" : "Verano"
+                },
+                {
+                    "name" : "Primavera",
+                    "echar fruto" : 1,
+                    "efecto" : 10,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                },
+                {
+                    "startDate" : "21/03/2022",
+                    "endDate" : "20/06/2022",
+                    "name" : "Primavera"
+                },
+                {
+                    "name" : "Otoño",
+                    "echar fruto" : 1,
+                    "efecto" : 10,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                },
+                {
+                    "startDate" : "21/03/2022",
+                    "endDate" : "20/06/2022",
+                    "name" : "Otonoño"
+                },
+                {
+                    "name" : "Invierno",
+                    "echar fruto" : 1,
+                    "efecto" : 10,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                },
+                {
+                    "startDate" : "21/03/2022",
+                    "endDate" : "20/06/2022",
+                    "name" : "Invierno"
+                }
+                
+            ]
+
+        },
+        {
+            "nombre" : "culantro",
+            "estados" : [
+              {
+            	"id": 1,
+                "nombre":"Almacigo",
+                "minLife": 90,
+                "maxLife": 100,
+                "foto": "url",
+                "rules": [
+                  {
+                    "tiempo": 3,
+                    "unidad": "dias",
+                    "minWater": 0,
+                    "maxWater": 30,
+                    "minAbono": 0,
+                    "maxAbono": 50,
+                    "efecto": -5
+                  },
+                  {
+                    "tiempo": 3,
+                    "unidad": "dias",
+                    "minWater": 30,
+                    "maxWater": 100,
+                    "minAbono": 50,
+                    "maxAbono": 100,
+                    "efecto": -10
+                  }
+            		]
+              },
+                {	 
+                        "id" : 2,
+                		"nombre" : "Adulta", 
+                        "minLife" : 60,
+                        "maxLife" : 90,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 4,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 40,
+                            "minAbono" : 0,
+                            "maxAbono" : 70,
+                            "efecto" : -10
+                        },{
+                            "tiempo" : 4,
+                            "unidad" : "dias",
+                            "minWater" : 40,
+                            "maxWater" : 100,
+                            "minAbono" : 70,
+                            "maxAbono" : 100,
+                            "efecto" : -20
+                        }
+                        ]
+                    
+                },
+                {		
+                		"id" : 3,
+                    	"nombre" : "con fruto",
+                        "minLife" : 60,
+                        "maxWater" : 80,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 2,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 70,
+                            "minAbono" : 0,
+                            "maxAbono" : 40,
+                            "efecto" : -5
+                        },
+                        {
+                            "tiempo" : 2,
+                            "unidad" : "dias",
+                            "minWater" : 70,
+                            "maxWater" : 100,
+                            "minAbono" : 40,
+                            "maxAbono" : 100,
+                            "efecto" : -20
+                        } 
+                        ] 
+                       
+                       
+                },
+                {		
+                		"id" : 4,
+                    	"nombre":"humeda",
+                        "minLife" : 0,
+                        "maxLife" : 100,
+                        "minWater" : 80,
+                        "maxWater" : 100,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 10,
+                            "minAbono" : 0,
+                            "maxAbono" : 20,
+                            "efecto" : 10
+                        },
+                        {
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 10,
+                            "maxWater" : 100,
+                            "minAbono" : 20,
+                            "maxAbono" : 100,
+                            "efecto" : -10
+                        }
+                        ]
+             
+                },
+                {
+                		"id" : 5,
+                    	"nombre" : "seca",
+                        "minLife" : 0,
+                        "maxLife" : 100,   
+                        "foto" : "url",  
+                        "rules" : [{
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 70,
+                            "minAbono" : 0,
+                            "maxAbono" : 40,
+                            "efecto" : 20
+                        },
+                        {
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 70,
+                            "maxWater" : 100,
+                            "minAbono" : 40,
+                            "maxAbono" : 100,
+                            "efecto" : -5
+                        }
+                        ]                                           
+                },
+                {
+                		"id" : 0,
+                    	"nombre" : "muerta",
+                        "minLife" : 0,
+                        "maxLife" : 10,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 100,
+                            "minAbono" : 0,
+                            "maxAbono" : 100,
+                            "efecto" : 0
+                        }]
+                }
+            ],
+            "seasons": [
+                {
+                    "name" : "Verano",
+                    "efecto" : 5,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                },
+                {
+                    "name" : "Primavera",
+                    "echar fruto" : 1,
+                    "efecto" : 10,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                },
+                {
+                    "name" : "Otoño",
+                    "echar fruto" : 1,
+                    "efecto" : 10,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                },
+                {
+                    "name" : "Invierno",
+                    "echar fruto" : 1,
+                    "efecto" : 10,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                }
+            ]
+        },
+        {
+            "nombre" : "cactus",
+            "estados" : [
+              {
+            	"id": 1,
+                "nombre":"Almacigo",
+                "minLife": 90,
+                "maxLife": 100,
+                "foto": "url",
+                "rules": [
+                  {
+                    "tiempo": 3,
+                    "unidad": "dias",
+                    "minWater": 0,
+                    "maxWater": 30,
+                    "minAbono": 0,
+                    "maxAbono": 50,
+                    "efecto": -5
+                  },
+                  {
+                    "tiempo": 3,
+                    "unidad": "dias",
+                    "minWater": 30,
+                    "maxWater": 100,
+                    "minAbono": 50,
+                    "maxAbono": 100,
+                    "efecto": -10
+                  }
+            		]
+              },
+                {	 
+                        "id" : 2,
+                		"nombre" : "Adulta", 
+                        "minLife" : 60,
+                        "maxLife" : 90,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 4,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 40,
+                            "minAbono" : 0,
+                            "maxAbono" : 70,
+                            "efecto" : -10
+                        },{
+                            "tiempo" : 4,
+                            "unidad" : "dias",
+                            "minWater" : 40,
+                            "maxWater" : 100,
+                            "minAbono" : 70,
+                            "maxAbono" : 100,
+                            "efecto" : -20
+                        }
+                        ]
+                    
+                },
+                {		
+                		"id" : 3,
+                    	"nombre" : "con fruto",
+                        "minLife" : 60,
+                        "maxWater" : 80,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 2,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 70,
+                            "minAbono" : 0,
+                            "maxAbono" : 40,
+                            "efecto" : -5
+                        },
+                        {
+                            "tiempo" : 2,
+                            "unidad" : "dias",
+                            "minWater" : 70,
+                            "maxWater" : 100,
+                            "minAbono" : 40,
+                            "maxAbono" : 100,
+                            "efecto" : -20
+                        } 
+                        ] 
+                       
+                       
+                },
+                {		
+                		"id" : 4,
+                    	"nombre":"humeda",
+                        "minLife" : 0,
+                        "maxLife" : 100,
+                        "minWater" : 80,
+                        "maxWater" : 100,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 10,
+                            "minAbono" : 0,
+                            "maxAbono" : 20,
+                            "efecto" : 10
+                        },
+                        {
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 10,
+                            "maxWater" : 100,
+                            "minAbono" : 20,
+                            "maxAbono" : 100,
+                            "efecto" : -10
+                        }
+                        ]
+             
+                },
+                {
+                		"id" : 5,
+                    	"nombre" : "seca",
+                        "minLife" : 0,
+                        "maxLife" : 100,   
+                        "foto" : "url",  
+                        "rules" : [{
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 70,
+                            "minAbono" : 0,
+                            "maxAbono" : 40,
+                            "efecto" : 20
+                        },
+                        {
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 70,
+                            "maxWater" : 100,
+                            "minAbono" : 40,
+                            "maxAbono" : 100,
+                            "efecto" : -5
+                        }
+                        ]                                           
+                },
+                {
+                		"id" : 0,
+                    	"nombre" : "muerta",
+                        "minLife" : 0,
+                        "maxLife" : 10,
+                        "foto" : "url",
+                        "rules" : [{
+                            "tiempo" : 1,
+                            "unidad" : "dias",
+                            "minWater" : 0,
+                            "maxWater" : 100,
+                            "minAbono" : 0,
+                            "maxAbono" : 100,
+                            "efecto" : 0
+                        }]
+                }
+            ],
+            "seasons" :  [
+                {
+                    "name" : "Verano",
+                    "efecto" : 5,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                },
+                {
+                    "name" : "Primavera",
+                    "echar fruto" : 1,
+                    "efecto" : 10,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                },
+                {
+                    "name" : "Otoño",
+                    "echar fruto" : 1,
+                    "efecto" : 10,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                },
+                {
+                    "name" : "Invierno",
+                    "echar fruto" : 1,
+                    "efecto" : 10,
+                    "rules" : {
+                        		"lluvia" : [{
+                            	"id" : 1,
+                            	"nombre" : "poca lluvia",
+                            	"efecto" : 4,
+                            	"water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 7
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -4
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+
+                        },
+                        {
+                            "id" : 2,
+                            "nombre" : "mucha lluvia",
+                            "efecto" : -5,
+                            "water" : [{
+                                "Tiempo" : 4,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 3
+                            },
+                            {
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -20
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+
+                        }
+                        ],
+                        		"sol":[{
+                            	"id" : 1,
+                            	"nombre" : "poco sol",
+                            	"efecto" : 2,
+                            	"water" : [{
+                                "Tiempo" : 3,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : 4
+                            },
+                            {
+                                "Tiempo" : 2,
+                                "unidad" : "dias", 
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : -2
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        },
+                        {
+                            	"id" : 2,
+                            	"nombre" : "mucho sol",
+                            	"efecto" : -8,
+                            	"water" : [{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 0,
+                                "maxWater" : 50,
+                                "efecto" : -30
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minWater" : 50,
+                                "maxWater" : 100,
+                                "efecto" : 5
+                            }],
+                            	"abono" :[{
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 0,
+                                "maxAbono" : 40,
+                                "efecto" : 2
+                            },
+                            {
+                                "Tiempo" : 1,
+                                "unidad" : "dias",
+                                "minAbono" : 40,
+                                "maxAbono" : 60,
+                                "efecto" : 6
+                            }]
+                        }]
+                    }
+                }  
+            ]
+        }
+    ]
+}
